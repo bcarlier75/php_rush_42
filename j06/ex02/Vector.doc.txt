@@ -1,0 +1,49 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class handles vector.
+
+An instance of a Vector can be contructed with an array containing the values:
+- dest (instance of Vertex)
+- orig (optionnal, instance of Vertex)
+
+Verbose mode can be enabled with the static var Vertex::$verbose set to true.
+
+The following methods are provided for this class:
+
+Float getX();
+Float getY();
+Float getZ();
+Float getW();
+
+Float magnitude();
+Returns the lenght of a vector.
+
+Vector normalize();
+Returns a normalized new instance of a Vector class.
+
+Vector add( Vector $rhs )
+Returns the result of the sum between current Vector and $rhs
+in new instance of Vector class.
+
+Vector sub( Vector $rhs )
+Returns the result of the substract between current Vector and $rhs
+in new instance of Vector class.
+
+Vector opposite()
+Returns the opposite of the current Vector in new instance of Vector class.
+
+Vector scalarProduct( $k )
+Returns the result of the scalar product between current Vector
+and the scalar $k in a new instance of Vector class.
+
+Float dotProduct( Vector $rhs )
+Returns the result of the scalar product between current Vector
+and the vector $rhs in a new instance of Vector class.
+
+Float cos( Vector $rhs )
+Returns the cosine; the angle between current Vector and the vector $rhs.
+
+Vector crossProduct( Vector $rhs )
+Returns the result of the cross product between current Vector
+and the vector $rhs in new instance of Vector class.
+---------------------------------------------------------------------- Vector ->

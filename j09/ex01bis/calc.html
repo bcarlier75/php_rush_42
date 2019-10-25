@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<title>Calc</title>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+	<script>
+		var calc;
+		var op;
+		var left;
+		var right;
+
+		$(document).ready(function(){
+			calc = $('#calculator_form');
+			op = $('#op');
+			left = $('#val_1');
+			right = $('#val_2');
+			calc.submit(submit);
+			setInterval("alert('Please, use me...')", 30000);
+		});
+
+		function submit(event) {
+			var val_left = Number(left.val());
+			var val_right = Number(right.val());
+			if (!isInt(left.val()) || !isInt(right.val())) {
+				alert("Error :(");
+				return false;
+			}
+			switch (op.val()) {
+				case ('+'):
+					display(val_left + val_right);
+					break;
+				case ('-'):
+					display(val_left - val_right);
+					break;
+				case ('*'):
+					display(val_left * val_right);
+					break;
+				case ('/'):
+					if (val_right == 0)
+						display("It’s over 9000!");
+					else
+						display(val_left / val_right);
+					break;
+				case ('%'):
+					if (val_right == 0)
+						display("It’s over 9000!");
+					else
+						display(val_left % val_right);
+					break;
+			}
+		}
+
+		function isInt(value) {
+			return (!isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10)) && value >= 0);
+		}
+
+		function display(value) {
+			console.log(value);
+			alert(value);
+		}
+	</script>
+	<body>
+		<form id="calculator_form" action="">
+			<input type='text' id='val_1' required minlength="1"  style="width:300px; font-size:20px; padding: 10px; border-radius: 4px">
+			<select type='text' id = 'op' style="font-size: 20px; padding: 10px;">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input type='text' id='val_2' required minlength="1" style="width:300px; font-size:20px; padding: 10px; border-radius: 4px">
+			<button id="submit_button" name="submit_button" value="OK" style="font-size: 20px; padding: 10px; border-radius: 4px; background-color: #0080FF; color: white">Try me!</button>
+		</form>
+	</body>
+</html>

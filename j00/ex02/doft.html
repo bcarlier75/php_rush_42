@@ -1,0 +1,61 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- doft.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: bcarlier <bcarlier@student.42.fr>          +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/10/14 13:30:41 by bcarlier          #+#    #+#            -->
+<!-- Updated: 2019/10/14 16:53:57 by bcarlier         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Day of the 42</title>
+	<link rel="stylesheet" href="doft.css">
+</head>
+<body>
+	<div class="all">
+		<header class="radius shadow">
+		<img src="resources/day_of_the_42.png" alt="">
+			<div class="header_right">
+				<img src="resources/loupe.png" alt="" class="c_loupe">
+				<a href="http://www.disney.com"><img src="resources/reload.png" title="Recommencer au début" alt="" class="c_reload"></a>
+				<a href="http://www.relaischateaux.com" title="Déconnecter"><img src="resources/close.gif" alt="" class="c_close"></a>
+			</div>
+		</header>
+		<div class="main">
+			<div class="shadow radius side side_left">
+				<a href="" title="Avancer"><img title="Avancer" src="resources/arrow.png" alt="Avancer"></a>
+				<a href="" title="Prendre"><img title="Prendre" src="resources/main.png" alt="Prendre"></a>
+				<a href="" title="Regarder"><img title="Regarder" class="border_img_eye" src="resources/oeil.png" alt="Regarder"></a>
+				<a href="" title="Utiliser"><img title="Utiliser" src="resources/outil.png" alt="Utiliser"></a>
+				<a href="" title="Parler"><img title="Parler" src="resources/chat-icon.png" alt="Parler"></a>
+			</div>
+			<div class="shadow radius side side_middle">
+				<img src="resources/cluster.jpg" class="imgcluster" alt="" usemap="#the_cluster_map">
+			</div>
+			<div class="shadow radius side side_right">
+				<img src="resources/book.png" class="imgbook" alt="Livre" title="Livre"> <br>
+				<img src="resources/towel.png" class="imgtowel" alt="Serviette" title="Serviette">
+				<div class="imgbrick" alt="Serviette" title="Brique"></div>
+			</div>
+		</div>
+		<div class="radius shadow gbox">
+			<p>Vous <span class="bigtxt">entrez</span> alors dans une grande piece remplie d'<span class="txtsha">ordinateurs</span>...</p>
+			<p class="italictxt">- Bonjour, vous êtes nouveau ici ?</p>
+			<form action="">
+				<input type="text" class="txtbox">
+				<input class="input_submit" type="submit" name="Answer_button" value="Repondre">
+			</form>
+		</div>
+	</div>
+	<map name="the_cluster_map" id="themap">
+    	<area alt="map_seat"   title="" href="http://www.apple.com" shape="rectangle" coords="800,445,1000,325"/>
+    	<area alt="map_screen" title="" href="http://www.ikea.com"  shape="rectangle" coords="325,325,475,560"/>
+	</map>
+</body>
+</html>

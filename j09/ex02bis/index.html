@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<title>Todo</title>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+	<script src="todo.js"></script>
+	<style>
+			h1 {
+				font-family : 'Segoe Ui';
+				font-size: 50px;
+				color: #FFA133;
+				text-align: center;
+			}
+			body {
+				font-family : 'Segoe Ui';
+				color: white;
+				width: 100%;
+				margin-right : auto;
+				margin-left : auto;
+			}
+			button{
+				height: 30px;
+				width: 200px;
+				border-radius: 10px;
+				background-color: #0080FF;
+				font-size: 18px;
+				color: white;
+			}
+			#ft_list{
+				margin-top: 30px;
+				font-size: 20px;
+			}
+
+			#ft_list div {
+				border: 2px solid grey;
+				padding: 5px 7px 5px 7px;
+				color: black;
+				border-radius: 10px;
+				line-height: 25px;
+				position: relative;
+				background-color: white;
+				margin-bottom : 10px;
+			}
+			#ft_list div:before {
+				padding:10px 20px ;
+				line-height: 25px;
+				position: relative;
+			}
+			#ft_list div:after {
+				padding:10px 20px;
+				line-height: 25px;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>My to do list</h1>
+		<div id="ft_list"></div>
+		<button id="button">New</button>
+	</body>
+</html>

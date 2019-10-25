@@ -1,0 +1,182 @@
+body{background-color:#505050}
+header
+{
+	background-color:#909090;
+	height:117px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+img
+{
+	margin:0;
+	height:100%;
+}
+.all
+{
+	padding-top:10px;
+	width:1420px;
+	margin:0 auto;
+	position:relative;
+}
+.main
+{
+	margin-top:20px;
+	width:100%;
+	padding-left:30px;
+}
+.radius{border-radius:10px}
+.shadow{box-shadow:8px 11px 8px black}
+.header_right
+{
+	float:right;
+	position:relative;
+	width:286px;
+}
+.c_loupe
+{
+	margin:auto
+}
+.c_reload
+{
+	float:right;
+    height:auto;
+    margin-right:10px;
+    width:18px;
+}
+.c_close
+{
+	float:right;
+	height:auto;
+	margin-right:10px;
+	position:absolute;
+	bottom:31px;
+	right:0px;
+}
+.main
+{
+	width:100%;
+	padding-left:30px;
+}
+.main .side
+{
+	background-color:#909090;
+	float:left;
+}
+.side_left
+{
+	width:140px;
+	height:425px;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+.side_left img
+{
+	display:block;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	width:auto;
+	height:72px;
+}
+.border_img_eye
+{
+	border:5px solid red;
+	border-radius:10px;
+}
+.side_middle
+{
+	margin-right:30px;
+	width:1020px;
+	height:600px;
+	margin-left:30px;
+	padding-bottom:10px;
+}
+.side_right
+{
+	width:140px;
+	height:425px;
+	padding-top:20px;
+}
+.imgcluster
+{
+	width:1000px;
+	height:590px;
+	margin-left:10px;
+	margin-top:10px;
+	margin-right:10px;
+	margin-bottom:50px;
+}
+.imgbook
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:auto;
+	height:100px;
+}
+.imgtowel
+{	
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:auto;
+	height:50px;
+}
+.imgbrick
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	background: repeat url('resources/brick.jpg');
+	width: 120px;
+	height: 70px;
+}
+.gbox
+{
+	float:left;
+	width:510px;
+	height:170px;
+	position:absolute;
+	top:705px;
+	left:-42px;
+	padding-left:10px;
+	background-color:#88FF89;
+}
+.bigtxt{font-size:37px; font-family:times}
+.italictxt
+{
+	font-size:15px;
+	font-style:italic;
+	font-family:Helvetica;
+}
+.txtsha{text-shadow:7px 7px 7px red}
+.txtbox
+{
+	width:380px;
+	border-style:inset;
+	border-width:2px;
+	border-color:lightgray;
+	vertical-align:middle;
+}
+.gbox p
+{
+	font-family:Helvetica;
+	font-size:18px;
+	font-weight:300;
+	margin-bottom:0;
+	margin-top:0;
+}
+.input_submit
+{
+	border-radius:3px;
+	font-size:12px;
+	font-family:Helvetica;
+    letter-spacing: 0.8px;
+	vertical-align:middle;
+	height:20px;
+	margin-left:4px;
+	width:75px;
+	background: #f5f7f6;
+	border: 1px solid #A8A4A5;
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<title>Balloon</title>
+	<style>
+		#balloon
+		{
+			background-color: red;
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+		}
+	</style>
+	<script>
+		const color_tab = ["red", "green", "blue"];
+		var i = 0;
+		var size = 200;
+		
+		window.onload = function () {
+			const balloon = document.querySelector("#balloon");
+			balloon.addEventListener("click", on_click);
+			balloon.addEventListener("mouseleave", on_leave);
+		};
+
+		function on_click() {
+			size += 10;
+			if (size > 420) {
+				size = 200;
+			}
+			i = i == 2 ? 0 : i + 1;
+			refreshBalloon(i);
+		}
+
+		function on_leave() {
+			size -= 5;
+			if (size < 200) {
+				size = 200;
+			}
+			i = i == 0 ? 2 : i - 1;
+			refreshBalloon(i);
+		}
+
+		function refreshBalloon(i) {
+			balloon.style.height = size + 'px';
+			balloon.style.width = size + 'px';
+			balloon.style.top = 0;
+			balloon.style.left = 0;
+			balloon.style.right = 0;
+			balloon.style.bottom = 0;
+			balloon.style.margin = 'auto';
+			balloon.style.backgroundColor = color_tab[i];
+
+		}
+	</script>
+	<body>
+		<div id="balloon"></div>
+	</body>
+</html>

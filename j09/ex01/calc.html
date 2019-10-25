@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<title>Calc</title>
+	<script>
+		window.onload = function() {
+			setInterval("alert('Please, use me...')", 30000)
+		};
+
+		function calculator(form) {
+			const op = form.elements["op"].value;
+			var left = form.elements["val_1"].value;
+			var right = form.elements["val_2"].value;
+			if (!isInt(left) || !isInt(right)) {
+				alert('Error :(');
+				return false;
+			}
+			else {
+				left = parseInt(left, 10);
+				right = parseInt(right, 10);
+				if (left < 0 || right < 0) {
+					alert('Error :(');
+					return false;
+				}
+				switch (op) {
+					case ("+"):
+						display(left + right);
+						break;
+					case ("-"):
+						display(left - right);
+						break;
+					case ("*"):
+						display(left * right);
+						break;
+					case ("/"):
+						if (right == 0)
+							display("It’s over 9000!");
+						else
+							display(left / right);
+						break;
+					case ("%"):
+						if (right == 0)
+							display("It’s over 9000!");
+						else
+							display(left % right);
+						break;
+				}
+			}
+		}
+		function isInt(value) {
+			return (!isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10)));
+		}
+		function display(value) {
+			console.log(value);
+			alert(value);
+		}
+	</script>
+	<body>
+		<form id="calculator_form" onsubmit="calculator(this)" action="">
+			<input type='text' id='val_1' required minlength="1"  style="width:300px; font-size:20px; padding: 10px; border-radius: 4px">
+			<select type='text' id = 'op' style="font-size: 20px; padding: 10px;">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input type='text' id='val_2' required minlength="1" style="width:300px; font-size:20px; padding: 10px; border-radius: 4px">
+			<button id="submit" name="submit" value="OK" style="font-size: 20px; padding: 10px; border-radius: 4px; background-color: #0080FF; color: white">Try me!</button>
+		</form>
+	</body>
+</html>

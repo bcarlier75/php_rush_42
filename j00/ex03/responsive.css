@@ -1,0 +1,52 @@
+h1
+{
+	text-align:center;
+	font-size:2vw;
+}
+table
+{
+	width:100%;
+	empty-cells:show;
+}
+.element
+{
+	width:5vw;
+	height:6vw;
+	border:1px solid black;
+}
+.empty
+{
+	font-size:1vw;
+	text-align:right;
+	width:3vw;
+}
+.row{height:2vw}
+.elem_s
+{
+	font-size:1.8vw;
+	font-weight:bold;
+	text-align:center;
+}
+.elem_w
+{
+	font-size:1vw;
+	text-align:right;
+}
+.elem_n
+{
+	font-size:1vw;
+	text-align:left;
+}
+.color_othernm_nonmetal{background-color:lightgreen}
+.color_reactive_nonmetal{background-color:yellow}
+.color_noble_gas{background-color:skyblue}
+.color_alkali_metal{background-color:crimson}
+.color_alkali_earthm{background-color:orange}
+.color_lanthanide{background-color:violet}
+.color_actinide{background-color:hotpink}
+.color_transitionm{background-color:salmon}
+.color_post_transitionm{background-color:darkgrey}
+.color_metalloid{background-color:tan}
+.color_unknown_cp{background-color:lightgrey}
+.text_gas{color:red}
+.text_liquid{color:blue}

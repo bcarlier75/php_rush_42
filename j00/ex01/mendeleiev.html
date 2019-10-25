@@ -1,0 +1,224 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- mendeleiev.html                                    :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: bcarlier <bcarlier@student.42.fr>          +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/10/14 10:37:26 by bcarlier          #+#    #+#            -->
+<!-- Updated: 2019/10/14 19:00:37 by bcarlier         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mendeleïev</title>
+	<style>
+		h1{
+		text-align:center;
+		font-size:30px;
+		}
+		table{
+			width:100%;
+			empty-cells:show;
+		}
+		.element{
+			width:50px;
+			height:60px;
+			border:1px solid black;
+		}
+		.empty{
+			font-size:15px;
+			text-align:right;
+			width:30px;
+		}
+		.row{height:30px}
+
+		.elem_s{
+			font-size:18px;
+			font-weight:bold;
+			text-align:center;
+		}
+		.elem_w{
+			font-size:10px;
+			text-align:right;
+		}
+		.elem_n{
+			font-size:10px;
+			text-align:left;
+		}
+		.color_othernm_nonmetal{background-color:lightgreen}
+		.color_reactive_nonmetal{background-color:yellow}
+		.color_noble_gas{background-color:skyblue}
+		.color_alkali_metal{background-color:crimson}
+		.color_alkali_earthm{background-color:orange}
+		.color_lanthanide{background-color:violet}
+		.color_actinide{background-color:hotpink}
+		.color_transitionm{background-color:salmon}
+		.color_post_transitionm{background-color:darkgrey}
+		.color_metalloid{background-color:tan}
+		.color_unknown_cp{background-color:lightgrey}
+		.text_gas{color:red}
+		.text_liquid{color:blue}
+	</style>
+	<body>
+		<h1>Periodic table</h1>
+		<div align="center"><img src="https://www.courrierinternational.com/sites/ci_master/files/styles/image_original_765/public/assets/images/gettyimages-89858309-w.jpg?itok=owzwiIlP"height="20%" width="20%" alt="Mendele&iumlev"></img></div>
+		<table contenteditable="true">
+			<tr>
+				<td class="color_othernm_nonmetal element"><div class="elem_w">1.008</div><div class="elem_s text_gas">H</div><div class="elem_n">1</div></td>
+				<td class="empty" colspan="17"></td>
+				<td class="color_noble_gas element"><div class="elem_w">4.003</div><div class="elem_s text_gas">He</div><div class="elem_n">2</div></td>
+			</tr>
+			<tr>
+				<td class="color_alkali_metal element"><div class="elem_w">6.94</div><div class="elem_s">Li</div><div class="elem_n">3</div></td>
+				<td class="color_alkali_earthm element"><div class="elem_w">9.012</div><div class="elem_s">Be</div><div class="elem_n">4</div></td>
+				<td class="empty" colspan="11"></td>
+				<td class="color_metalloid element"><div class="elem_w">10.81</div><div class="elem_s">B</div><div class="elem_n">5</div></td>
+				<td class="color_othernm_nonmetal element"><div class="elem_w">12.011</div><div class="elem_s">C</div><div class="elem_n">6</div></td>
+				<td class="color_othernm_nonmetal element"><div class="elem_w">14.007</div><div class="elem_s text_gas">N</div><div class="elem_n">7</div></td>
+				<td class="color_othernm_nonmetal element"><div class="elem_w">15.999</div><div class="elem_s text_gas">O</div><div class="elem_n">8</div></td>
+				<td class="color_reactive_nonmetal element"><div class="elem_w">18.998</div><div class="elem_s text_gas">F</div><div class="elem_n">9</div></td>
+				<td class="color_noble_gas element"><div class="elem_w">20.180</div><div class="elem_s text_gas">Ne</div><div class="elem_n">10</div></td>
+			</tr>
+			<tr>
+				<td class="color_alkali_metal element"><div class="elem_w">22.990</div><div class="elem_s">Na</div><div class="elem_n">11</div></td>
+				<td class="color_alkali_earthm element"><div class="elem_w">24.305</div><div class="elem_s">Mg</div><div class="elem_n">12</div></td>
+				<td class="empty" colspan="11"></td>
+				<td class="color_post_transitionm element"><div class="elem_w">26.982</div><div class="elem_s">Al</div><div class="elem_n">13</div></td>
+				<td class="color_metalloid element"><div class="elem_w">28.085</div><div class="elem_s">Si</div><div class="elem_n">14</div></td>
+				<td class="color_othernm_nonmetal element"><div class="elem_w">30.974</div><div class="elem_s">P</div><div class="elem_n">15</div></td>
+				<td class="color_othernm_nonmetal element"><div class="elem_w">32.06</div><div class="elem_s">S</div><div class="elem_n">16</div></td>
+				<td class="color_reactive_nonmetal element"><div class="elem_w">35.45</div><div class="elem_s text_gas">Cl</div><div class="elem_n">17</div></td>
+				<td class="color_noble_gas element"><div class="elem_w">39.95</div><div class="elem_s text_gas">Ar</div><div class="elem_n">18</div></td>
+			</tr>
+			<tr>
+				<td class="color_alkali_metal element"><div class="elem_w">39.098</div><div class="elem_s">K</div><div class="elem_n">19</div></td>
+				<td class="color_alkali_earthm element"><div class="elem_w">40.078</div><div class="elem_s">Ca</div><div class="elem_n">20</div></td>
+				<td class="empty"></td>
+				<td class="color_transitionm element"><div class="elem_w">44.956</div><div class="elem_s">Sc</div><div class="elem_n">21</div></td>
+				<td class="color_transitionm element"><div class="elem_w">47.867</div><div class="elem_s">Ti</div><div class="elem_n">22</div></td>
+				<td class="color_transitionm element"><div class="elem_w">50.942</div><div class="elem_s">V</div><div class="elem_n">23</div></td>
+				<td class="color_transitionm element"><div class="elem_w">51.996</div><div class="elem_s">Cr</div><div class="elem_n">24</div></td>
+				<td class="color_transitionm element"><div class="elem_w">54.938</div><div class="elem_s">Mn</div><div class="elem_n">25</div></td>
+				<td class="color_transitionm element"><div class="elem_w">55.845</div><div class="elem_s">Fe</div><div class="elem_n">26</div></td>
+				<td class="color_transitionm element"><div class="elem_w">58.933</div><div class="elem_s">Co</div><div class="elem_n">27</div></td>
+				<td class="color_transitionm element"><div class="elem_w">58.693</div><div class="elem_s">Ni</div><div class="elem_n">28</div></td>
+				<td class="color_transitionm element"><div class="elem_w">63.546</div><div class="elem_s">Cu</div><div class="elem_n">29</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">65.38</div><div class="elem_s">Zn</div><div class="elem_n">30</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">69.723</div><div class="elem_s">Ga</div><div class="elem_n">31</div></td>
+				<td class="color_metalloid element"><div class="elem_w">72.630</div><div class="elem_s">Ge</div><div class="elem_n">32</div></td>
+				<td class="color_metalloid element"><div class="elem_w">74.922</div><div class="elem_s">As</div><div class="elem_n">33</div></td>
+				<td class="color_othernm_nonmetal element"><div class="elem_w">78.971</div><div class="elem_s">Se</div><div class="elem_n">34</div></td>
+				<td class="color_reactive_nonmetal element"><div class="elem_w">79.904</div><div class="elem_s text_liquid">Br</div><div class="elem_n">35</div></td>
+				<td class="color_noble_gas element"><div class="elem_w">83.798</div><div class="elem_s text_gas">Kr</div><div class="elem_n">36</div></td>
+			</tr>
+			<tr>
+				<td class="color_alkali_metal element"><div class="elem_w">85.468</div><div class="elem_s">Rb</div><div class="elem_n">37</div></td>
+				<td class="color_alkali_earthm element"><div class="elem_w">87.62</div><div class="elem_s">Sr</div><div class="elem_n">38</div></td>
+				<td class="empty"></td>
+				<td class="color_transitionm element"><div class="elem_w">88.906</div><div class="elem_s">Y</div><div class="elem_n">39</div></td>
+				<td class="color_transitionm element"><div class="elem_w">91.224</div><div class="elem_s">Zr</div><div class="elem_n">40</div></td>
+				<td class="color_transitionm element"><div class="elem_w">92.906</div><div class="elem_s">Nb</div><div class="elem_n">41</div></td>
+				<td class="color_transitionm element"><div class="elem_w">95.95</div><div class="elem_s">Mo</div><div class="elem_n">42</div></td>
+				<td class="color_transitionm element"><div class="elem_w">[97]</div><div class="elem_s">Tc</div><div class="elem_n">43</div></td>
+				<td class="color_transitionm element"><div class="elem_w">101.07</div><div class="elem_s">Ru</div><div class="elem_n">44</div></td>
+				<td class="color_transitionm element"><div class="elem_w">102.91</div><div class="elem_s">Rh</div><div class="elem_n">45</div></td>
+				<td class="color_transitionm element"><div class="elem_w">106.42</div><div class="elem_s">Pd</div><div class="elem_n">46</div></td>
+				<td class="color_transitionm element"><div class="elem_w">107.87</div><div class="elem_s">Ag</div><div class="elem_n">47</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">112.41</div><div class="elem_s">Cd</div><div class="elem_n">48</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">114.82</div><div class="elem_s">In</div><div class="elem_n">49</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">118.71</div><div class="elem_s">Sn</div><div class="elem_n">50</div></td>
+				<td class="color_metalloid element"><div class="elem_w">121.76</div><div class="elem_s">Sb</div><div class="elem_n">51</div></td>
+				<td class="color_metalloid element"><div class="elem_w">127.60</div><div class="elem_s">Te</div><div class="elem_n">52</div></td>
+				<td class="color_reactive_nonmetal element"><div class="elem_w">126.90</div><div class="elem_s">I</div><div class="elem_n">53</div></td>
+				<td class="color_noble_gas element"><div class="elem_w">131.29</div><div class="elem_s text_gas">Xe</div><div class="elem_n">54</div></td>
+			</tr>
+			<tr>
+				<td class="color_alkali_metal element"><div class="elem_w">132.91</div><div class="elem_s">Cs</div><div class="elem_n">55</div></td>
+				<td class="color_alkali_earthm element"><div class="elem_w">137.33</div><div class="elem_s">Ba</div><div class="elem_n">56</div></td>
+				<td class="empty"></td>
+				<td class="color_lanthanide element"><div class="elem_w">.</div><div class="elem_s">*</div><div class="elem_n">57-71</div></td>
+				<td class="color_transitionm element"><div class="elem_w">178.49</div><div class="elem_s">Hf</div><div class="elem_n">72</div></td>
+				<td class="color_transitionm element"><div class="elem_w">180.95</div><div class="elem_s">Ta</div><div class="elem_n">73</div></td>
+				<td class="color_transitionm element"><div class="elem_w">183.84</div><div class="elem_s">W</div><div class="elem_n">74</div></td>
+				<td class="color_transitionm element"><div class="elem_w">186.21</div><div class="elem_s">Re</div><div class="elem_n">75</div></td>
+				<td class="color_transitionm element"><div class="elem_w">190.23</div><div class="elem_s">Os</div><div class="elem_n">76</div></td>
+				<td class="color_transitionm element"><div class="elem_w">192.22</div><div class="elem_s">Ir</div><div class="elem_n">77</div></td>
+				<td class="color_transitionm element"><div class="elem_w">195.08</div><div class="elem_s">Pt</div><div class="elem_n">78</div></td>
+				<td class="color_transitionm element"><div class="elem_w">196.97</div><div class="elem_s">Au</div><div class="elem_n">79</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">200.59</div><div class="elem_s text_liquid">Hg</div><div class="elem_n">80</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">204.38</div><div class="elem_s">Tl</div><div class="elem_n">81</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">207.2</div><div class="elem_s">Pb</div><div class="elem_n">82</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">208.98</div><div class="elem_s">Bi</div><div class="elem_n">83</div></td>
+				<td class="color_post_transitionm element"><div class="elem_w">[209]</div><div class="elem_s">Po</div><div class="elem_n">84</div></td>
+				<td class="color_metalloid element"><div class="elem_w">[210]</div><div class="elem_s">At</div><div class="elem_n">85</div></td>
+				<td class="color_noble_gas element"><div class="elem_w">[222]</div><div class="elem_s text_gas">Rn</div><div class="elem_n">86</div></td>
+			</tr>
+			<tr>
+				<td class="color_alkali_metal element"><div class="elem_w">[223]</div><div class="elem_s">Fr</div><div class="elem_n">87</div></td>
+				<td class="color_alkali_earthm element"><div class="elem_w">[226]</div><div class="elem_s">Ra</div><div class="elem_n">88</div></td>
+				<td class="empty"></td>
+				<td class="color_actinide element"><div class="elem_w">. </div><div class="elem_s">**</div><div class="elem_n">89-103</div></td>
+				<td class="color_transitionm element"><div class="elem_w">[267]</div><div class="elem_s">Rf</div><div class="elem_n">104</div></td>
+				<td class="color_transitionm element"><div class="elem_w">[268]</div><div class="elem_s">Db</div><div class="elem_n">105</div></td>
+				<td class="color_transitionm element"><div class="elem_w">[269]</div><div class="elem_s">Sg</div><div class="elem_n">106</div></td>
+				<td class="color_transitionm element"><div class="elem_w">[270]</div><div class="elem_s">Bh</div><div class="elem_n">107</div></td>
+				<td class="color_transitionm element"><div class="elem_w">[268]</div><div class="elem_s">Hs</div><div class="elem_n">108</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[278]</div><div class="elem_s">Mt</div><div class="elem_n">109</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[281]</div><div class="elem_s">Ds</div><div class="elem_n">110</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[282]</div><div class="elem_s">Rg</div><div class="elem_n">111</div></td>
+				<td class="color_transitionm element"><div class="elem_w">[285]</div><div class="elem_s">Cn</div><div class="elem_n">112</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[286]</div><div class="elem_s">Nh</div><div class="elem_n">113</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[289]</div><div class="elem_s">Fl</div><div class="elem_n">114</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[290]</div><div class="elem_s">Mc</div><div class="elem_n">115</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[293]</div><div class="elem_s">Lv</div><div class="elem_n">116</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[294]</div><div class="elem_s">Ts</div><div class="elem_n">117</div></td>
+				<td class="color_unknown_cp element"><div class="elem_w">[294]</div><div class="elem_s">Og</div><div class="elem_n">118</div></td>
+			</tr>
+			<tr>
+				<td class="row"></td>
+			</tr>
+			<tr>
+				<td class="empty" colspan="3"></td>
+				<td class="empty"><div class="elem_s">*</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">138.91</div><div class="elem_s">La</div><div class="elem_n">57</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">140.12</div><div class="elem_s">Ce</div><div class="elem_n">58</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">140.91</div><div class="elem_s">Pr</div><div class="elem_n">59</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">144.24</div><div class="elem_s">Nd</div><div class="elem_n">60</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">[145]</div><div class="elem_s">Pm</div><div class="elem_n">61</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">150.36</div><div class="elem_s">Sm</div><div class="elem_n">62</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">151.96</div><div class="elem_s">Eu</div><div class="elem_n">63</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">157.25</div><div class="elem_s">Gd</div><div class="elem_n">64</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">158.93</div><div class="elem_s">Tb</div><div class="elem_n">65</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">162.50</div><div class="elem_s">Dy</div><div class="elem_n">66</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">164.93</div><div class="elem_s">Ho</div><div class="elem_n">67</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">167.26</div><div class="elem_s">Er</div><div class="elem_n">68</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">168.93</div><div class="elem_s">Tm</div><div class="elem_n">69</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">173.05</div><div class="elem_s">Yb</div><div class="elem_n">70</div></td>
+				<td class="color_lanthanide element"><div class="elem_w">174.97</div><div class="elem_s">Lu</div><div class="elem_n">71</div></td>
+			</tr>
+			<tr>
+				<td class="empty" colspan="3"></td>
+				<td class="empty"><div class="elem_s">**</div></td>
+				<td class="color_actinide element"><div class="elem_w">[227]</div><div class="elem_s">Ac</div><div class="elem_n">89</div></td>
+				<td class="color_actinide element"><div class="elem_w">232.04</div><div class="elem_s">Th</div><div class="elem_n">90</div></td>
+				<td class="color_actinide element"><div class="elem_w">231.04</div><div class="elem_s">Pa</div><div class="elem_n">91</div></td>
+				<td class="color_actinide element"><div class="elem_w">238.03</div><div class="elem_s">U</div><div class="elem_n">92</div></td>
+				<td class="color_actinide element"><div class="elem_w">[237]</div><div class="elem_s">Np</div><div class="elem_n">93</div></td>
+				<td class="color_actinide element"><div class="elem_w">[244]</div><div class="elem_s">Pu</div><div class="elem_n">94</div></td>
+				<td class="color_actinide element"><div class="elem_w">[243]</div><div class="elem_s">Am</div><div class="elem_n">95</div></td>
+				<td class="color_actinide element"><div class="elem_w">[247]</div><div class="elem_s">Cm</div><div class="elem_n">96</div></td>
+				<td class="color_actinide element"><div class="elem_w">[247]</div><div class="elem_s">Bk</div><div class="elem_n">97</div></td>
+				<td class="color_actinide element"><div class="elem_w">[251]</div><div class="elem_s">Cf</div><div class="elem_n">98</div></td>
+				<td class="color_actinide element"><div class="elem_w">[252]</div><div class="elem_s">Es</div><div class="elem_n">99</div></td>
+				<td class="color_actinide element"><div class="elem_w">[257]</div><div class="elem_s">Fm</div><div class="elem_n">100</div></td>
+				<td class="color_actinide element"><div class="elem_w">[258]</div><div class="elem_s">Md</div><div class="elem_n">101</div></td>
+				<td class="color_actinide element"><div class="elem_w">[259]</div><div class="elem_s">No</div><div class="elem_n">102</div></td>
+				<td class="color_actinide element"><div class="elem_w">[266]</div><div class="elem_s">Lr</div><div class="elem_n">103</div></td>
+			</tr>
+	</body>
+</head>
+</html>

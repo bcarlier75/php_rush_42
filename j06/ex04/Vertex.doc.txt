@@ -1,0 +1,22 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles vertex.
+
+An instance can be contructed with the x, y and z coordinates in an array.
+These coordinates are mandatory:
+new Vertex( array( 'x' => 1.0, 'y' => 2.0, 'z' => 3.0 ) );
+
+Two optionnal parameters can be added to this array:
+- 'w' which is an other coordinate used for matrix calculus (1.0 by default).
+- an instance of Color class (an instance of a white color by default).
+
+Exemple:
+$b  = new Color( array( 'red' =>   0, 'green' =>   0, 'blue' => 255 ) );
+$my = new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $b ) );
+
+Verbose mode can be enabled with the static var Vertex::$verbose set to true.
+
+The Vertex class have get and set methods for each of its parameters:
+- $my->getX();
+- $my->setX($my_value);
+---------------------------------------------------------------------- Vertex ->
